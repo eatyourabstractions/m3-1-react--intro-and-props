@@ -7,4 +7,30 @@ header {
   */
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15),
     0px 1px 0.5px rgba(0, 0, 0, 0.075);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.avatar {
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  
+}
+
+.plain{
+  list-style: none;
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+span{
+  margin-top: 20px;
 }

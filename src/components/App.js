@@ -7,10 +7,13 @@ import Footer from './Footer';
 import './App.css';
 
 const App = (props) => {
+  
+  console.log(props.users)
+  let participants = props.users.filter(p => p.username !== props.currentUser.username)
   return (
     <div className='wrapper'>
-      <Header />
-      <ChatStream />
+      <Header participants={participants}/>
+      <ChatStream messages={props.conversation.messages}  currentUser={props.currentUser.username}/>
       <Footer />
     </div>
   );
